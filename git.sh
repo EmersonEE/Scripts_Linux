@@ -18,6 +18,9 @@ git config --global user.email "perezemerson85@gmail.com"
 # Habilitar la interfaz de usuario
 git config --global user.ui true
 
+# No pedir credenciales 
+git config --global credential.helper store
+
 # Configurar la rama principal por defecto como "main"
 git config --global init.defaultBranch main
 
