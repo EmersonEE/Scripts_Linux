@@ -11,11 +11,14 @@ sudo pacman -S --noconfirm cava cmatrix google-chrome visual-studio-code-bin mpv
  
 # Instalando UFW
 echo "Instalando UFW"
-sudo pacman -S  --noconfirm ufw
+sudo pacman -S  --noconfirm ufw ranger python-pillow 
 
 # Habilitando ufw
 echo "Habilitando ufw"
 sudo ufw enable
+
+#Arreglar hora dual boot
+sudo timedatectl set-local-rtc 1
 
 echo "Instalando KiCad"
 sudo pacman -Syu  --noconfirm kicad
