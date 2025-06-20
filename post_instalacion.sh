@@ -6,8 +6,9 @@ sudo pacman -Sy
 
 # Instalamos los paquetes con pacman
 echo "Instalando paquetes desde los repositorios oficiales..."
-sudo pacman -S --noconfirm cava cmatrix google-chrome visual-studio-code-bin mpv telegram-desktop papirus-icon-theme ttf-cascadia-code  otf-cascadia-code libreoffice-fresh  libreoffice-fresh-es python-virtualenv htop  qbittorrent spotify  spotify-adblock-git youtube-music-bin platformio-core platformio-core-udev
+sudo pacman -S --noconfirm sox mosquito cava cmatrix google-chrome visual-studio-code-bin mpv telegram-desktop papirus-icon-theme ttf-cascadia-code  otf-cascadia-code libreoffice-fresh  libreoffice-fresh-es python-virtualenv htop  qbittorrent spotify  spotify-adblock-git youtube-music-bin platformio-core platformio-core-udev
 
+ 
  
 # Instalando UFW
 echo "Instalando UFW"
@@ -16,6 +17,8 @@ sudo pacman -S  --noconfirm ufw ranger python-pillow
 # Habilitando ufw
 echo "Habilitando ufw"
 sudo ufw enable
+
+sudo ufw allow 1883/tcp
 
 #Arreglar hora dual boot
 sudo timedatectl set-local-rtc 1
@@ -33,7 +36,7 @@ sudo pacman -S --noconfirm yay
 
 # Instalamos Mullvad Browser desde AUR
 echo "Instalando Mullvad Browser desde AUR..."
-yay -S --noconfirm mullvad-browser-bin
+yay -S --noconfirm mullvad-browser-bin mqttx-bin
 
 # Instalamos flatpak
 echo "Instalando Flatpak..."
