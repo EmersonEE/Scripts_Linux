@@ -6,7 +6,7 @@ sudo pacman -Sy
 
 # Instalamos los paquetes con pacman
 echo "Instalando paquetes desde los repositorios oficiales..."
-sudo pacman -S --noconfirm sox mosquito cava cmatrix google-chrome visual-studio-code-bin mpv telegram-desktop papirus-icon-theme ttf-cascadia-code  otf-cascadia-code libreoffice-fresh  libreoffice-fresh-es python-virtualenv htop  qbittorrent spotify  spotify-adblock-git youtube-music-bin platformio-core platformio-core-udev
+sudo pacman -S --noconfirm sox mosquitto cava cmatrix google-chrome visual-studio-code-bin mpv telegram-desktop papirus-icon-theme ttf-cascadia-code  otf-cascadia-code libreoffice-fresh  libreoffice-fresh-es python-virtualenv htop  qbittorrent spotify  spotify-adblock-git youtube-music-bin platformio-core platformio-core-udev
 
  
  
