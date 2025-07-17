@@ -12,6 +12,8 @@ REPOS=(
     "https://github.com/EmersonEE/PlatformIO.git"
     "https://github.com/EmersonEE/My_KiCad.git"
     "https://github.com/EmersonEE/Scripts_Linux.git"
+    "https://github.com/EmersonEE/NVIM_Config.git"
+    "https://github.com/EmersonEE/Python.git"
 )
 
 # Cambiar al directorio base
