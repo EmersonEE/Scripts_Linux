@@ -6,13 +6,11 @@ sudo pacman -Sy
 
 # Instalamos los paquetes con pacman
 echo "Instalando paquetes desde los repositorios oficiales..."
-sudo pacman -S --noconfirm sox mosquitto cava cmatrix google-chrome visual-studio-code-bin mpv telegram-desktop papirus-icon-theme ttf-cascadia-code  otf-cascadia-code libreoffice-fresh  libreoffice-fresh-es python-virtualenv htop  qbittorrent spotify  spotify-adblock-git youtube-music-bin platformio-core platformio-core-udev
+sudo pacman -S --noconfirm ntfs2btrfs-git ntgs-3g sox mosquitto cava cmatrix google-chrome visual-studio-code-bin mpv telegram-desktop papirus-icon-theme ttf-cascadia-code otf-cascadia-code libreoffice-fresh libreoffice-fresh-es python-virtualenv htop qbittorrent spotify spotify-adblock-git youtube-music-bin platformio-core platformio-core-udev
 
- 
- 
 # Instalando UFW
 echo "Instalando UFW"
-sudo pacman -S  --noconfirm ufw ranger python-pillow 
+sudo pacman -S --noconfirm ufw ranger python-pillow
 
 # Habilitando ufw
 echo "Habilitando ufw"
@@ -24,11 +22,10 @@ sudo ufw allow 1883/tcp
 sudo timedatectl set-local-rtc 1
 
 echo "Instalando KiCad"
-sudo pacman -Syu  --noconfirm kicad
+sudo pacman -Syu --noconfirm kicad
 
 echo "Instalando Librerias Kicas"
-sudo pacman -Syu  --noconfirm --asdeps kicad-library kicad-library-3d
-
+sudo pacman -Syu --noconfirm --asdeps kicad-library kicad-library-3d
 
 # Instalamos yay para poder instalar paquetes AUR
 echo "Instalando yay (AUR helper)..."

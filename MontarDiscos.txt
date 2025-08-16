@@ -1,0 +1,2 @@
+UUID=01DA75ACC3514980   /mnt/DiscoPrincipal   ntfs3   defaults,nofail,uid=1000,gid=1000,umask=022   0 0
+UUID=01DA75CB30F67500   /mnt/DiscoLaptop   ntfs3   defaults,nofail,uid=1000,gid=1000,umask=022   0 0
