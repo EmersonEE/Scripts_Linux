@@ -1,8 +1,8 @@
 #!/bin/bash
 
 # Ruta a los sonidos
-SOUND_CONNECT="/usr/share/sounds/freedesktop/stereo/Sonidos_USB/Kyaa.wav"
-SOUND_DISCONNECT="/usr/share/sounds/freedesktop/stereo/Sonidos_USB/Kyaa.wav"
+SOUND_CONNECT="/usr/share/sounds/freedesktop/stereo/bell.oga"
+SOUND_DISCONNECT="/usr/share/sounds/freedesktop/stereo/complete.oga"
 
 # Verificá que sox esté instalado y play disponible
 command -v play >/dev/null || {
