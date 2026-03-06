@@ -1,8 +1,7 @@
 #!/bin/bash
 
 echo "=== Instalando Mosquitto y clientes MQTT ==="
-sudo pacman -Sy --noconfirm mosquitto mosquitto-clients
-
+sudo pacman -Sy --noconfirm mosquitto
 echo "=== Habilitando y arrancando el servicio Mosquitto ==="
 sudo systemctl enable --now mosquitto.service
 
@@ -22,10 +21,10 @@ echo "=== Reiniciando Mosquitto ==="
 sudo systemctl restart mosquitto.service
 
 echo "=== Verificando si ufw está instalado ==="
-if ! command -v ufw &> /dev/null; then
-    echo "Instalando ufw..."
-    sudo pacman -S --noconfirm ufw
-    sudo systemctl enable --now ufw
+if ! command -v ufw &>/dev/null; then
+  echo "Instalando ufw..."
+  sudo pacman -S --noconfirm ufw
+  sudo systemctl enable --now ufw
 fi
 
 echo "=== Permitimos tráfico MQTT (puerto 1883) ==="
@@ -38,4 +37,3 @@ echo "=== Verificación final: Mosquitto debería estar corriendo en el puerto 1
 sudo ss -tuln | grep 1883
 
 echo "✅ Mosquitto instalado y listo para usar con conexiones desde red local."
-
